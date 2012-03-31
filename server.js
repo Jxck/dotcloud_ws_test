@@ -1,5 +1,5 @@
-var http = require('http');
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello World\n');
+var connect = require('connect');
+
+connect().use(function(req, res) {
+  res.end('hello dotcloud :)')
 }).listen(8080);

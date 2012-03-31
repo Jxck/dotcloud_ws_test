@@ -8,6 +8,8 @@
   "engines": {
     "node": "*"
   },
-  "dependencies": {},
+  "dependencies": {
+    "connect": "*"
+  },
   "devDependencies": {}
 }
