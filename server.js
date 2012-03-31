@@ -9,6 +9,9 @@ app.configure(function(){
 });
 
 io = io.listen(app);
+io.configure('production', function() {
+  io.set('transports', ['websocket']);
+});
 
 io.sockets.on('connection', function (socket) {
   console.log('connected');
